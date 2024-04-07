@@ -1,0 +1,5 @@
+display:flex;{
+    use to display in single line
+    ex::
+    div(header);
+}

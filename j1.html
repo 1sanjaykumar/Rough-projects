@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>addition of two numbers</p>
+    <input type="text" placeholder="enter a" id="a">
+    <input type="text" placeholder="enter b" id="b"> <!-- Fixed typo here, it was id-="b" instead of id="b" -->
+    <button onclick="addtwo()">Add</button>
+    <p id="demo"></p>
+<br>
+
+  <p>multiplication of two numbers</p>
+  <input type="text" placeholder="enter a" id="v">
+  <input type="text" placeholder="enter b" id="u">
+  <button onclick="multtwo()">multiply</button>
+  <p id="demo1"></p>
+
+</body>
+
+<script>
+    function addtwo(){
+        let a = parseFloat(document.getElementById("a").value); // Get the value of input field 'a'
+        let b = parseFloat(document.getElementById("b").value); // Get the value of input field 'b'
+        let sum = a + b; // Perform addition
+        document.getElementById("demo").innerHTML = "Sum: " + sum; // Display the sum in the paragraph with id 'demo'
+    }
+
+    function multtwo(){
+        let c=parseFloat(document.getElementbyid("v").value);
+        let d=parseFloat(document.getElementbyid("u").value);
+        let mult=v*u;
+        document.getElementbyid("demo1").innerHTML="multiply is:" +mult;
+    }
+</script>
+</html>

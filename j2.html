@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sanjay</title>
+</head>
+<body>
+    <p>press 1 for addition</p>
+    <p>press 2 for substraction</p>
+    <p>pess 3 for division</p>
+    <p>press 4 for multiplication</p>
+    
+    
+    <input type="text" placeholder="enter a" id="a">
+    <input type="text" placeholder="enter b" id="b"><br><br>
+
+
+    <input type="text" placeholder="enter condition"id="c">
+    <button onclick="mult()">enter</button>
+        <p id="demo"></p>
+        
+    
+</body>
+
+<script>
+function mult(){
+    let a=parseFloat(document.getElementById("a").value);
+    let b=parseFloat(document.getElementById("b").value);
+    let c=parseFloat(document.getElementById("c").value);
+
+    switch(c)
+    {
+    case 1:
+    let mult=a+b;
+    document.getElementById("demo").innerHTML="addition is:"+mult;
+    break;
+
+    case 2:
+    let mult1=a-b;
+    document.getElementById("demo").innerHTML="substraction is is:"+mult1;
+    break;
+
+    case 3:
+    let mult2=a/b;
+    document.getElementById("demo").innerHTML="division is:"+mult2;
+    break;
+
+    case 4:
+         let mult3=a*b;
+    document.getElementById("demo").innerHTML="multiply is:"+mult3;
+    break;
+
+    default:
+        document.getElementById("demo").innerHTML="invalid input";
+
+    }
+
+}
+</script>
+</html>

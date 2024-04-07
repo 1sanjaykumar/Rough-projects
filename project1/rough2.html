@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div >
+        <p id="para">hello guys i am here to teach you html</p>
+    </div>
+    <button onclick="hide()" id="">click here</button>
+    
+</body>
+<script>
+    function hide(){
+        let para=document.getElementById("para");
+        if(para.style.display!='none'){
+            para.style.display='none';
+        }
+        else{
+            para.style.display='block';
+        }
+
+    }
+</script>
+</html>

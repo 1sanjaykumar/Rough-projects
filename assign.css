@@ -1,0 +1,75 @@
+.header{
+    width:100%;
+    height:150px;
+    text-align: center;
+
+   background-color: rgb(8, 7, 29);
+   color:white;
+
+}
+
+
+
+.page1{
+    float:right;
+    width:100%;
+    height:400px;
+    color:white;
+    background-color: rgb(44, 41, 41);
+    margin-bottom: 7.5px;
+    
+    
+    }
+    .intro{
+        float:left;
+        width:40%;
+        height:40px;
+        margin-left: 40px;
+    }
+
+.image{
+    float:right;
+    width:700px;
+    height:400px;
+    
+}
+
+.page2{
+    float :right;
+    width:100%;
+    height:400px;
+    color:white;
+    background-color: rgb(44, 41, 41);
+    margin-left: 740px;
+}
+
+.image2{
+    float :left;
+    width:700px;
+    height:400px;
+    
+}
+
+.skills{
+    color:white;
+    width:100%;
+    height:100%;
+    margin-left: 740px;
+}
+
+.para{
+    float:right;
+    width:100%;
+    height:100%;
+    margin-left: 40px;
+}
+
+.ul{
+    float:right;
+    margin-left: 740px;
+}
+
+.table ,th ,td{
+    border: 1px solid black;
+}
+

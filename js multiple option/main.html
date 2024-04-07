@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="body">
+    <div class="box" >
+        <div class="input"><h1>Ready for calculation</h1></div>
+        <div class="input">
+        <input type="text" placeholder="enter A" id="a">
+        <input type="text" placeholder="enter B" id="b">
+       </div>
+       
+        <br>
+        <div class="input">
+        <button onclick="addtwo()">Addition</button>
+        <button onclick="substracttwo()">substraction</button><br><br>
+        <button onclick="multtwo()">multiplication</button>
+        <button onclick="divtwo()">division</button>
+        <p id="sum"></p>
+        </div>
+
+    </div>
+
+    <script>
+      
+       
+
+        function addtwo(){
+            let a=parseFloat(document.getElementById("a").value);
+        let b=parseFloat(document.getElementById("b").value);
+            let c=a+b;
+            document.getElementById("sum").innerHTML="sum is :"+c;
+        }
+
+        function substracttwo(){
+            let a=parseFloat(document.getElementById("a").value);
+        let b=parseFloat(document.getElementById("b").value);
+           let c=a-b;
+            document.getElementById("sum").innerHTML="sub is :"+c;
+        }
+
+        function multtwo(){
+            let a=parseFloat(document.getElementById("a").value);
+        let b=parseFloat(document.getElementById("b").value);
+            let c=a*b;
+            document.getElementById("sum").innerHTML="mult is :"+c;
+        }
+
+        function divtwo(){
+            let a=parseFloat(document.getElementById("a").value);
+        let b=parseFloat(document.getElementById("b").value);
+           let  c=a/b;
+            document.getElementById("sum").innerHTML="div is :"+c;
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

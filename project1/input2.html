@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css">
+</head>
+<body class="body">
+    <header class="header"></header>
+    <div>
+<div class="div1">
+    <p class="heading"><h1>Multiplication of two number</h1></p>
+</div>
+
+<div class="div2">
+    <p class="div3"><h1>Put the value of A and B</h1></p>
+<input type="text" placeholder="enter A"id="a">
+<input type="text" placeholder="enter B"id="b">
+<button onclick="addtwo()">multiply</button>
+<p id="sum"></p>
+</div>
+
+    </div>
+    
+</body>
+
+<script>
+    function addtwo(){
+        let a=parseFloat(document.getElementById("a").value);
+        let b=parseFloat(document.getElementById("b").value);
+       let c=a*b;
+        document.getElementById("sum").innerHTML="the multiplication is:"+c;
+}
+</script>
+</html>

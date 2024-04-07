@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p id="para">AI roundup: Bill Gates virtually attended the Times Now <br> Summit 2024 during which he talked about<br> India's potential for AI collaboration. Gates also highlighted India's role in adopting and benefiting from emerging technologies such as AI. On the other hand, UK workers are on the verge of losing jobs due to AI adoption. Studies showcase that about 8 million UK workers are at risk from AI. Know more about such AI news from today, March 27, 2024.</p>
+    </div>
+    <button onclick="hide()">click here</button>
+
+</body>
+
+<script>
+
+let para=document.getElementById('para');
+        para.addEventListener('mouseout',function run(){
+            alert('mouse out');
+        });
+
+        para.addEventListener('mouseover',function run(){
+            alert('mouse inside');
+        });
+
+        para.addEventListener('mousedown',function run(){
+            alert('mouse down');
+        });
+
+        para.addEventListener('mouseup',function run(){
+            alert('mouse down');
+        });
+        
+        
+    function hide(){
+
+        if(para.style.display!='none')
+        {
+            para.style.display='none';
+        }
+        else{
+            para.style.display='block';
+        }
+    }
+
+</script>
+</html>
